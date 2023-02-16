@@ -60,13 +60,15 @@
       font-size: 16px;
       line-height: 140%;
       color: #000000;
-      width: 64px;
+      width: 70px;
       text-align: end;
+      white-space: nowrap;
     }
     .menu_toggle {
       position: relative;
       &.button {
-        width: 64px;
+        width: 70px;
+        justify-content: flex-start;
       }
     }
     .menu_wrapper {

@@ -38,6 +38,10 @@ const Header = () => {
   const containerRef = useRef(null);
   const [height, setHeight] = useState(0);
 
+  const openDS2 = () => {
+    window.open(DS2_URL);
+  };
+
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(document.documentElement.scrollTop > 0);
@@ -52,7 +56,7 @@ const Header = () => {
     }
   }, []);
 
-  const logo = <img src={LOGO} alt="Logo" className={css.logo} />;
+  const logo = <img role="presentation" src={LOGO} alt="Logo" className={css.logo} onClick={openDS2} />;
   const menu = (
     <ul className={css.menu_wrapper}>
       <li className={css.menu_item_wrapper}>
