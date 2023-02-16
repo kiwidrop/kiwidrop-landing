@@ -1,15 +1,15 @@
 import cn from 'classnames';
 import { motion } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
+import { HiMinus } from 'react-icons/hi';
 
 import LOGO from '@/assets/logo.png';
 import { Button } from '@/components/common';
+import { DS2_URL, installURL } from '@/cons/common';
 import { useDesktop } from '@/hooks';
 
 import css from './Header.module.scss';
 import MenuToggle from './MenuToggle';
-
-const joinNow = 'Join Now';
 
 const sidebar = {
   open: (height = 1000) => ({
@@ -56,12 +56,12 @@ const Header = () => {
   const menu = (
     <ul className={css.menu_wrapper}>
       <li className={css.menu_item_wrapper}>
-        <a href="https://help.kiwidrop.com/knowledge/about-us" target="_blank" rel="noreferrer">
-          About us
+        <a href={DS2_URL} target="_blank" rel="noreferrer">
+          Start Selling
         </a>
       </li>
       <li className={css.menu_item_wrapper}>
-        <a href="https://apps.shopify.com/kiwidrop" target="_blank" rel="noreferrer">
+        <a href={installURL} target="_blank" rel="noreferrer">
           Install now
         </a>
       </li>
@@ -72,12 +72,24 @@ const Header = () => {
       </li>
     </ul>
   );
+  const secondMenu = (
+    <ul className={css.menu_wrapper}>
+      <li className={css.menu_item_wrapper}>
+        <a href={DS2_URL} target="_blank" rel="noreferrer">
+          Join now
+        </a>
+      </li>
+      <li className={css.menu_item_wrapper}>
+        <a href={installURL} target="_blank" rel="noreferrer">
+          Log in
+        </a>
+      </li>
+    </ul>
+  );
 
   const toggleMenu = () => {
     setIsMenuVisible((preState) => !preState);
   };
-
-  const handleJoinNow = () => {};
 
   if (isDesktop) {
     return (
@@ -87,7 +99,12 @@ const Header = () => {
           {menu}
         </div>
         <div className={css.right}>
-          <Button shape="rounded">{joinNow}</Button>
+          <Button shape="rounded" color={isScrolled ? 'dark' : 'white'} type="link" href={DS2_URL}>
+            Log in
+          </Button>
+          <Button shape="rounded" color="white" style={{ background: '#CFF963' }} type="link" href={DS2_URL}>
+            Join Now
+          </Button>
         </div>
       </div>
     );
@@ -97,14 +114,19 @@ const Header = () => {
     <div className={cn(css.ns_com_header_main, css.is_m)}>
       <motion.div initial={false} animate={isMenuVisible ? 'open' : 'closed'} custom={height} ref={containerRef}>
         <motion.div className={css.menu_back} variants={sidebar}>
+          <div className={css.logo}>{logo}</div>
           {menu}
+          <div className={css.minus}>
+            <HiMinus />
+          </div>
+          {secondMenu}
         </motion.div>
         <MenuToggle toggle={toggleMenu} />
       </motion.div>
       {logo}
-      <div className={css.join_now} onClick={handleJoinNow}>
-        {joinNow}
-      </div>
+      <a className={css.join_now} href={DS2_URL}>
+        Join Now
+      </a>
     </div>
   );
 };

@@ -12,6 +12,7 @@ body,
   -webkit-overflow-scrolling: touch;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-tap-highlight-color: transparent;
 }
 
 *,
@@ -24,11 +25,10 @@ body,
 }
 
 html a {
-  color: var(--color-primary-medium);
-
+  text-decoration: none;
   &:hover,
   &:active {
-    color: #86a800;
+    text-decoration: underline;
   }
 }
 
@@ -59,133 +59,4 @@ code {
 
 strong {
   font-weight: 500;
-}
-
-// React Icons
-.react-icons {
-  vertical-align: -0.125em;
-}
-
-// utils classes
-.text-success {
-  color: var(--color-success);
-}
-.text-error {
-  color: var(--color-danger);
-}
-.text-warning {
-  color: var(--color-warning);
-}
-.text-danger {
-  color: var(--color-danger);
-}
-.text-muted {
-  color: var(--color-gray4);
-}
-.text-muted2 {
-  color: #c7c7c7;
-}
-.text-black {
-  color: var(--color-black);
-}
-.text-white {
-  color: var(--color-white);
-}
-.text-bold {
-  font-weight: 500;
-}
-.text-underline {
-  text-decoration: underline;
-}
-.text-delete {
-  text-decoration: line-through;
-}
-
-// global styles
-.delete-confirm-dialog {
-  .adm-dialog-body-content,
-  .adm-auto-center-content {
-    text-align: center;
-  }
-
-  .adm-dialog-footer {
-    .adm-button:not(.adm-dialog-button-bold) {
-      color: var(--color-black);
-    }
-    .adm-dialog-button-bold {
-      color: var(--color-danger);
-      font-weight: normal !important;
-    }
-  }
-}
-
-.ant-slider {
-  .ant-slider-track {
-    background-color: var(--color-primary);
-  }
-  .ant-slider-handle {
-    border-color: var(--color-primary);
-  }
-}
-
-.img-crop-modal {
-  .ant-modal-footer {
-    .ant-btn-primary {
-      border-color: var(--color-black);
-      background: var(--color-black);
-    }
-  }
-}
-
-button.adm-button {
-  > span {
-    white-space: nowrap;
-  }
-}
-
-.ns_com_modal_for_confirm {
-  --adm-color-primary: #000;
-
-  :global {
-    @media screen and (max-width: 768px) {
-      .adm-modal-body {
-        width: 100%;
-        min-width: inherit;
-        max-width: inherit;
-      }
-    }
-    @media screen and (min-width: 769px) {
-      .adm-modal-body {
-        width: 500px;
-        min-width: auot;
-      }
-    }
-
-    .adm-modal-body:not(.adm-modal-with-image) {
-      padding: 0;
-      .adm-modal-title {
-        margin: 0;
-        padding: 12px;
-        font-size: 16px;
-        border-bottom: 1px solid #c7c7c7;
-      }
-      .adm-modal-content {
-        padding: 12px 12px 4px;
-        .adm-auto-center-content {
-          text-align: center;
-        }
-      }
-      .adm-modal-footer {
-        .adm-space-item {
-          margin: 0 auto;
-          .adm-button.adm-button-large {
-            width: 200px;
-            border-radius: 100px;
-            padding-top: 7px;
-            padding-bottom: 7px;
-          }
-        }
-      }
-    }
-  }
 }

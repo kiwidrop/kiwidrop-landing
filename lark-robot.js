@@ -30,7 +30,7 @@ notify = async () => {
     content: {
       post: {
         zh_cn: {
-          title: 'kiwidrop-web',
+          title: 'kiwidrop-landing',
           content: [
             [
               {

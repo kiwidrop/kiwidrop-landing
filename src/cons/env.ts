@@ -14,6 +14,7 @@ type EnvConfig = {
 
   // Just for debug
   JUST_FOR_DEBUG_X_KIWI_USER_ID: number | null;
+  DS2_URL: string;
 };
 
 // Common
@@ -26,6 +27,7 @@ const { EXCLUDE_REGISTER_COUNTRIES } = process.env as any;
 const { SENTRY_ENVIRONMENT } = process.env;
 const { SENTRY_TRACES_SAMPLE_RATE } = process.env as any;
 const { TYPEFORM_ID } = process.env;
+const { DS2_URL } = process.env;
 
 export default {
   // Common
@@ -43,4 +45,6 @@ export default {
 
   // Just for debug
   JUST_FOR_DEBUG_X_KIWI_USER_ID: null,
+
+  DS2_URL,
 } as EnvConfig;

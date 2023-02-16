@@ -42,6 +42,7 @@ import whiteBirch from '@/assets/landing-v2/USABrandsLogos/Rectangle79.png';
 import davidani from '@/assets/landing-v2/USABrandsLogos/Rectangle80.png';
 import zenana from '@/assets/landing-v2/USABrandsLogos/Rectangle81.png';
 import { Button, Footer } from '@/components/common';
+import { DS2_URL, installURL } from '@/cons/common';
 import { useDesktop } from '@/hooks';
 
 import css from './index.module.scss';
@@ -224,7 +225,9 @@ const PartOurMission = () => {
           </div>
           <div className={css.line_4}>Start now and sell in less than 15 minutes.</div>
           <div className={css.line_5}>
-            <Button shape="rounded">Join The Revolution!</Button>
+            <Button shape="rounded" color="light_dark" bordered type="link" href={DS2_URL}>
+              Join The Revolution!
+            </Button>
           </div>
         </div>
       </div>
@@ -277,10 +280,10 @@ const PartScaleYourLife = () => {
           Stop gambling on inventory, focus on curating drops from our inventory catalog in the cloud
         </div>
         <div className={cn(css.btns_wrapper, css.line_3)}>
-          <Button shape="rounded" color="main" className={css.btn1}>
+          <Button shape="rounded" color="dark" className={css.btn1} type="link" href={DS2_URL}>
             Start for free
           </Button>
-          <Button shape="rounded" className={css.btn2}>
+          <Button bordered shape="rounded" color="white" className={css.btn2} type="link" href={installURL}>
             Install for Shopify
           </Button>
         </div>
@@ -304,7 +307,7 @@ const PartScaleYourLife = () => {
       </div>
       {isDesktop && (
         <div className={css.see_why_btn_wrapper}>
-          <Button shape="rounded">
+          <Button className={css.see_why_btn} shape="rounded" type="link" href={DS2_URL}>
             See what happens
             <FaAngleUp />
           </Button>
@@ -367,7 +370,7 @@ const PartFeature = () => {
               </div>
             )}
             <div className={css.line_4}>
-              <Button shape="rounded" color="main">
+              <Button shape="rounded" color="dark" bordered type="link" href={DS2_URL}>
                 Get Started For Free
               </Button>
             </div>
@@ -376,7 +379,7 @@ const PartFeature = () => {
       </div>
       {isDesktop && (
         <div className={css.line_4}>
-          <Button shape="rounded" color="main">
+          <Button shape="rounded" color="dark" bordered type="link" href={DS2_URL}>
             Get Started For Free
           </Button>
         </div>
@@ -430,7 +433,9 @@ const LandingPage = () => {
           ))}
         </div>
         <div className={css.line_4}>
-          <Button shape="rounded">Get Started For Free</Button>
+          <Button shape="rounded" color="light_dark" bordered type="link" href={DS2_URL}>
+            Get Started For Free
+          </Button>
         </div>
       </div>
 
@@ -483,7 +488,9 @@ const LandingPage = () => {
           ))}
         </div>
         <div className={css.line_4}>
-          <Button shape="rounded">Get Started For Free</Button>
+          <Button shape="rounded" color="light_dark" bordered type="link" href={DS2_URL}>
+            Get Started For Free
+          </Button>
         </div>
       </div>
 
@@ -513,7 +520,7 @@ const LandingPage = () => {
               </div>
             </div>
             <div className={css.btn_wrapper}>
-              <Button shape="rounded" color="main">
+              <Button shape="rounded" color="dark" type="link" href={DS2_URL}>
                 Get Started For Free
               </Button>
             </div>
@@ -533,7 +540,7 @@ const LandingPage = () => {
             collection easily by bulk importing!
           </div>
           <div className={css.line_3}>
-            <Button shape="rounded" color="main">
+            <Button shape="rounded" color="dark" type="link" href={DS2_URL}>
               Get Started For Free
             </Button>
           </div>
@@ -563,7 +570,7 @@ const LandingPage = () => {
           ))}
         </div>
         <div className={css.line_4}>
-          <Button size="middle" shape="rounded" color="main">
+          <Button shape="rounded" color="light_dark" bordered type="link" href={DS2_URL}>
             Get Started For Free
           </Button>
         </div>
@@ -600,7 +607,7 @@ const LandingPage = () => {
           ))}
         </div>
         <div className={css.line_4}>
-          <Button size="middle" shape="rounded" color="main">
+          <Button shape="rounded" color="dark" type="link" href={DS2_URL}>
             Get Started For Free
           </Button>
         </div>

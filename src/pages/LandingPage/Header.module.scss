@@ -39,6 +39,10 @@
     padding: 24px 70px;
     display: flex;
     column-gap: 24px;
+    .right {
+      display: flex;
+      column-gap: 16px;
+    }
     .menu_wrapper {
       display: flex;
       flex-direction: row;
@@ -75,9 +79,18 @@
       z-index: 0;
       background: #fff;
       position: absolute;
-      top: -29px;
+      top: -56px;
       left: 0;
       padding-top: 76px;
+      .logo {
+        text-align: center;
+      }
+      .menu_wrapper {
+        margin: 12px 0;
+      }
+      .minus {
+        text-align: center;
+      }
     }
   }
 }
