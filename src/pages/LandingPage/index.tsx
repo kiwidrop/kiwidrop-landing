@@ -3,6 +3,7 @@ import { motion } from 'framer-motion';
 import { useState } from 'react';
 import { FaAngleUp, FaArrowDown, FaArrowUp, FaChevronUp, FaPlus, FaStar } from 'react-icons/fa';
 
+import allArrows from '@/assets/landing-v2/Arrows/all-arrows.png';
 import commentSold from '@/assets/landing-v2/ChannelsLogos/commentSold.webp';
 import facebook from '@/assets/landing-v2/ChannelsLogos/facebook.webp';
 import ins from '@/assets/landing-v2/ChannelsLogos/ins.webp';
@@ -568,6 +569,7 @@ const LandingPage = () => {
               </div>
             </section>
           ))}
+          {isDesktop && <img className={css.back_img} src={allArrows} alt="arrow" />}
         </div>
         <div className={css.line_4}>
           <Button shape="rounded" color="light_dark" bordered type="link" href={DS2_URL}>
