@@ -1,0 +1,7 @@
+:root:root {
+  --font-family: 'Jost', sans-serif;
+
+  @supports (font-variation-settings: normal) {
+    --font-family: 'JostVariable', sans-serif;
+  }
+}

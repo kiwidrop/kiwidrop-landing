@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="icon" href="assets/favicon.ico" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1.00001, viewport-fit=cover" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="KiwiDrop Website" />
+  <link rel="apple-touch-icon" href="assets/logo512.png" />
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="manifest.json" />
+  <title>KiwiDrop</title>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="index.tsx"></script>
+
+  <!-- Trick to copy files -->
+  <noscript>
+    <a href="robots.txt" style="display: none"></a>
+  </noscript>
+  <!-- End Trick to copy robots.txt -->
+
+  <!-- Start of HubSpot Embed Code -->
+  <style>
+    #hubspot-messages-iframe-container {
+      z-index: 500;
+    }
+
+    /* hack fix the HubSpot chat button position issue on mobile */
+    @media screen and (max-width: 768px) {
+      #hubspot-messages-iframe-container {
+        pointer-events: none;
+      }
+
+      #hubspot-messages-iframe-container>iframe {
+        pointer-events: auto;
+      }
+
+      #hubspot-messages-iframe-container>.shadow-container:not(.active)+iframe {
+        bottom: 50px !important;
+        bottom: calc(50px + env(safe-area-inset-bottom)) !important;
+      }
+    }
+  </style>
+  <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/20806640.js"></script>
+
+  <!-- HubSpot Forms -->
+  <!-- <script type="text/javascript" async defer src="//js.hsforms.net/forms/shell.js"></script> -->
+
+  <!-- End of HubSpot Embed Code -->
+
+  <script>
+    // resolve the old users browser has pwa cache issue
+    navigator.serviceWorker.getRegistrations().then(function (registrations) {
+      for (let registration of registrations) {
+        registration.unregister();
+      }
+    });
+  </script>
+</body>
+
+</html>

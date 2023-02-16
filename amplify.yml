@@ -1,0 +1,36 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - npm install --legacy-peer-deps
+    build:
+      commands:
+        - |
+          if [[ $AWS_BRANCH == master ]]
+          then
+            npm run build
+            echo "--- branch: master ---"
+          elif [[ $AWS_BRANCH == test ]]
+          then
+            npm run build:test
+            echo "--- branch: test ---"
+          elif [[ $AWS_BRANCH =~ demobox- ]]
+          then
+            npm run build:test
+            echo "--- branch: demobox ---"
+          else
+            npm run build
+            echo "--- branch: others(PR preview) ---"
+          fi
+    postBuild:
+      commands:
+        - node ./lark-robot.js $AWS_BRANCH
+  artifacts:
+    baseDirectory: /dist
+    files:
+      - '**/*'
+  cache:
+    paths:
+      - node_modules/**/*
+      - '!node_modules/.cache'
