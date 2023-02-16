@@ -10,9 +10,6 @@ import ins from '@/assets/landing-v2/ChannelsLogos/ins.webp';
 import poshmark from '@/assets/landing-v2/ChannelsLogos/poshmark.webp';
 import shopify from '@/assets/landing-v2/ChannelsLogos/shopify.webp';
 import tiktok from '@/assets/landing-v2/ChannelsLogos/tiktok.webp';
-import customer1 from '@/assets/landing-v2/Customers/customer1.png';
-import customer2 from '@/assets/landing-v2/Customers/customer2.png';
-import customer3 from '@/assets/landing-v2/Customers/customer3.png';
 import g10logos from '@/assets/landing-v2/FundingLogos/g10logos.png';
 import g3371logos from '@/assets/landing-v2/FundingLogos/g3371logos.png';
 import Grouplogos from '@/assets/landing-v2/FundingLogos/Grouplogos.png';
@@ -47,6 +44,7 @@ import { DS2_URL, installURL } from '@/cons/common';
 import { useDesktop } from '@/hooks';
 
 import css from './index.module.scss';
+import PartWhatCustomerSay from './PartWhatCustomerSay';
 
 const part_platforms = [facebook, shopify, commentSold, tiktok, ins, poshmark];
 const part_scale_brand = [
@@ -147,23 +145,7 @@ const part_feature = [
     desc: 'Manage multiple Shopify stores from your Kiwi account. ',
   },
 ];
-const part_what_customer_say = [
-  {
-    logo: customer1,
-    title: 'Jenny Boston Boutique',
-    desc: 'We love this company and the people...top notch. They are innovative, approachable, extremely hard working and have become a true partner for us. As both a traditional e-comm and LIVE selling company, we were looking for a way to secure more inventory in a seamless manner. Kiwi has done that and will continue to expand!',
-  },
-  {
-    logo: customer2,
-    title: 'Bella Jade',
-    desc: 'Been using this app for a few months and am in love! Price point is great for margins, styles are on trend, photos are perfect and shipping is on fire! Thank you for providing excellent customer service when needed!',
-  },
-  {
-    logo: customer3,
-    title: 'Amber Moon',
-    desc: 'Highly recommend! I use several other drop shippers and kiwi by far is my favorite. They are very intentional with the collections they offer and the inventory choice is the best out there. I feel like they sell styles I actually want in my shop that I would pick myself. So happy with the kiwi experience and look forward to a continued relationship as we both grow together.',
-  },
-];
+
 const part_quantity_assured = [
   {
     bg: 'https://cdn.shopify.com/s/files/1/0532/6186/1018/files/Closed_Loop_1.webp?v=1676351127',
@@ -578,42 +560,7 @@ const LandingPage = () => {
         </div>
       </div>
 
-      <div className={css.part_what_customer_say}>
-        <div className={css.line_1}>What our customers say</div>
-        <div className={css.line_2}>
-          <div>We love you!</div>
-          <div>
-            But we really love that you... <span>love us!</span>
-          </div>
-          <div className={css.second_text}>
-            The Kiwidrop family is growing! Join the movement of like-minded fashion retailers, influencers and live
-            sellers.
-          </div>
-        </div>
-        <div className={css.line_3}>
-          {part_what_customer_say.map(({ title, desc, logo }) => (
-            <section className={css.section}>
-              <div className={css.logo}>
-                <img src={logo} alt="logo" />
-              </div>
-              <div className={css.title}>{title}</div>
-              <div className={css.star}>
-                <FaStar />
-                <FaStar />
-                <FaStar />
-                <FaStar />
-                <FaStar />
-              </div>
-              <div className={css.desc}>{desc}</div>
-            </section>
-          ))}
-        </div>
-        <div className={css.line_4}>
-          <Button shape="rounded" color="dark" type="link" href={DS2_URL}>
-            Get Started For Free
-          </Button>
-        </div>
-      </div>
+      <PartWhatCustomerSay />
 
       <PartBackedBy />
 
