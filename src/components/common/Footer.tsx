@@ -2,8 +2,9 @@ import cn from 'classnames';
 import { FaFacebook, FaInstagram } from 'react-icons/fa';
 
 import LOGO from '@/assets/logo.png';
-import { DS2_URL } from '@/cons/common';
+import { DS2_URL, installURL } from '@/cons/common';
 
+import Button from './Button';
 import css from './Footer.module.scss';
 
 export interface Props {
@@ -24,34 +25,18 @@ function Footer({ className, style }: Props): JSX.Element {
             <div className={css.section_title}>
               <img role="presentation" src={LOGO} alt="Logo" className={css.logo} onClick={openDS2} />
             </div>
+            <div className={css.section_title}>Your Dropshipping Partner</div>
             <div className={css.section_body}>
               <div className={css.section_links}>
-                <a href="https://help.kiwidrop.com/knowledge/about-us" target="_blank" rel="noreferrer">
-                  Your Dropshipping Partner
-                </a>
-                <a href="https://help.kiwidrop.com/knowledge" target="_blank" rel="noreferrer">
+                <a className={css.contact_us} href="mailto:support@kiwidrop.com">
                   Contact us at support@kiwidrop.com 400 Concar Drive, San Mateo, CA, 97173, United States
                 </a>
               </div>
-              {/* <div className={css.section_links}>
-                <a href="https://help.kiwidrop.com/knowledge/about-us" target="_blank" rel="noreferrer">
-                  About us
-                </a>
-                <a href="https://help.kiwidrop.com/knowledge" target="_blank" rel="noreferrer">
-                  Career
-                </a>
-                <a href="https://blog.kiwidrop.com" target="_blank" rel="noreferrer">
-                  Blog
-                </a>
-                <a href="mailto:support@kiwidrop.com" target="_blank" rel="noreferrer">
-                  Contact us
-                </a>
-              </div> */}
             </div>
           </div>
 
           <div className={css.section}>
-            <div className={css.section_title}>SUPPORT</div>
+            <div className={css.section_title}>Support</div>
             <div className={css.section_body}>
               <div className={css.section_links}>
                 <a href="https://help.kiwidrop.com/knowledge/getting-started" target="_blank" rel="noreferrer">
@@ -71,7 +56,7 @@ function Footer({ className, style }: Props): JSX.Element {
           </div>
 
           <div className={css.section}>
-            <div className={css.section_title}>COMMUNITY</div>
+            <div className={css.section_title}>Community</div>
             <div className={css.section_body}>
               <div className={css.section_links}>
                 <a href="https://discord.gg/TMBsCXqKKX" target="_blank" rel="noreferrer">
@@ -91,6 +76,21 @@ function Footer({ className, style }: Props): JSX.Element {
               </div>
             </div>
           </div>
+
+          <div className={css.section}>
+            <div className={css.section_title}>Download</div>
+            <div className={css.section_body}>
+              <Button
+                color="white"
+                shape="rounded"
+                bordered
+                className={css.install_btn}
+                onClick={() => window.open(installURL)}
+              >
+                Install to Shopify
+              </Button>
+            </div>
+          </div>
         </div>
 
         <hr />
@@ -99,15 +99,19 @@ function Footer({ className, style }: Props): JSX.Element {
           <div className={css.secondary_item_wrapper}>
             <div className={css.secondary_item}>@{new Date().getFullYear()} Kiwidrop Inc.</div>
             <div className={css.secondary_item}>
-              <a href="/terms-of-service" onClick={() => window.scrollTo(0, 0)}>
+              <a href="https://app.kiwidrop.com/terms-of-service" target="_blank" rel="noreferrer">
                 Terms of Service
               </a>
             </div>
-            <div className={css.secondary_item} onClick={() => window.scrollTo(0, 0)}>
-              <a href="/privacy-policy">Privacy Policy</a>
+            <div className={css.secondary_item}>
+              <a href="https://app.kiwidrop.com/privacy-policy" target="_blank" rel="noreferrer">
+                Privacy Policy
+              </a>
             </div>
-            <div className={css.secondary_item} onClick={() => window.scrollTo(0, 0)}>
-              <a href="/intellectual-property-policy">IP Policy</a>
+            <div className={css.secondary_item}>
+              <a href="https://app.kiwidrop.com/intellectual-property-policy" target="_blank" rel="noreferrer">
+                IP Policy
+              </a>
             </div>
           </div>
         </div>

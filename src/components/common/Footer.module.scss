@@ -1,28 +1,22 @@
 .ns_com_footer_main {
-  color: var(--color-black);
-  font-size: var(--font-size3);
-  line-height: 1.4;
-  border-top: 1px solid #c7c7c7;
-  background: var(--color-white);
+  background: #fff;
 
   .logo {
     width: 160px;
   }
-  .content {
-    & > hr {
-      margin: 0;
-      border: none;
-      border-top: 1px solid #c7c7c7;
-    }
+
+  hr {
+    height: 1px;
+    border: none;
+    border-top: 1px solid #e8e8e8;
+    margin: 0;
   }
 
   .main {
+    padding: 70px;
     display: grid;
-    box-sizing: content-box;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: var(--spacing-m);
-    padding: 32px 48px;
-    margin: 0 auto;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px;
   }
 
   a:not(:hover, :active, :focus) {
@@ -32,30 +26,45 @@
   .section {
     .section_title {
       font-weight: 500;
-      margin-bottom: var(--spacing-m);
+      margin-bottom: 8px;
+      font-size: 16px;
+      line-height: 140%;
+      color: #111;
     }
 
     .section_body {
       display: flex;
       flex-direction: column;
+      .install_btn {
+        width: 165px;
+      }
     }
 
     .section_links {
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      line-height: 1.8;
+
+      a {
+        font-size: 16px;
+        line-height: 180%;
+        font-weight: 400;
+        color: #111;
+      }
+
+      .contact_us {
+        line-height: 140%;
+      }
     }
 
     .section_icons {
       display: flex;
       flex-direction: row;
-      margin-top: var(--spacing-m);
+      margin-top: 8px;
       font-size: 35px;
       line-height: 1;
-
-      & > * + * {
-        margin-left: var(--spacing-xxl);
+      > a {
+        margin-right: 16px;
       }
     }
   }
@@ -63,10 +72,8 @@
   .secondary {
     display: block;
     box-sizing: content-box;
-    padding: 32px 48px;
+    padding: 70px;
     margin: 0 auto;
-    color: var(--color-gray4);
-    line-height: 1.8;
 
     .secondary_item_wrapper {
       display: flex;
@@ -77,6 +84,10 @@
     .secondary_item {
       display: flex;
       align-items: center;
+      color: #999999;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 180%;
 
       &:not(:first-child)::before {
         content: '';
@@ -87,6 +98,20 @@
         border-left: 1px solid currentColor;
         vertical-align: middle;
       }
+    }
+  }
+
+  @media screen and (min-width: 767px) and (max-width: 1140px) {
+    .main {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 36px;
+    }
+  }
+
+  @at-root .is_m {
+    .main {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 24px;
     }
   }
 }
