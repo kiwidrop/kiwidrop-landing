@@ -5,7 +5,7 @@
     font-size: 40px;
     line-height: 120%;
     color: #111111;
-    padding: 0 200px;
+    padding: 0 20%;
     text-align: center;
     > span {
       color: #6538e5;
@@ -76,6 +76,12 @@
           }
         }
       }
+    }
+  }
+
+  @media screen and (min-width: 767px) and (max-width: 1140px) {
+    .line_1 {
+      padding: 0 10%;
     }
   }
 }

@@ -1,6 +1,9 @@
 import cn from 'classnames';
 import { FaFacebook, FaInstagram } from 'react-icons/fa';
 
+import LOGO from '@/assets/logo.png';
+import { DS2_URL } from '@/cons/common';
+
 import css from './Footer.module.scss';
 
 export interface Props {
@@ -9,14 +12,28 @@ export interface Props {
 }
 
 function Footer({ className, style }: Props): JSX.Element {
+  const openDS2 = () => {
+    window.open(DS2_URL);
+  };
+
   return (
     <div className={cn(css.ns_com_footer_main, className)} style={style}>
       <div className={css.content}>
         <div className={css.main}>
           <div className={css.section}>
-            <div className={css.section_title}>COMPANY</div>
+            <div className={css.section_title}>
+              <img role="presentation" src={LOGO} alt="Logo" className={css.logo} onClick={openDS2} />
+            </div>
             <div className={css.section_body}>
               <div className={css.section_links}>
+                <a href="https://help.kiwidrop.com/knowledge/about-us" target="_blank" rel="noreferrer">
+                  Your Dropshipping Partner
+                </a>
+                <a href="https://help.kiwidrop.com/knowledge" target="_blank" rel="noreferrer">
+                  Contact us at support@kiwidrop.com 400 Concar Drive, San Mateo, CA, 97173, United States
+                </a>
+              </div>
+              {/* <div className={css.section_links}>
                 <a href="https://help.kiwidrop.com/knowledge/about-us" target="_blank" rel="noreferrer">
                   About us
                 </a>
@@ -29,7 +46,7 @@ function Footer({ className, style }: Props): JSX.Element {
                 <a href="mailto:support@kiwidrop.com" target="_blank" rel="noreferrer">
                   Contact us
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
 

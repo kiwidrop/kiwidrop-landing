@@ -30,8 +30,8 @@ const PartQuantityAssured = () => {
     <div className={css.part_quantity_assured}>
       <div className={css.line_1}>Quality assured Production</div>
       <div className={css.line_2}>
-        Closed loop quality control, <span>care-free international??</span>
-        (highlight this is for interantional ) we know you love the price and variety of international lines but....
+        Add variety and margin by using our care-free international suppliers. No more Alibaba mystery shipments, we
+        believe in closed loop quality control and stringent factory vetting.
       </div>
       <div className={css.line_3}>
         {part_quantity_assured.map(({ bg, title, desc }) => (

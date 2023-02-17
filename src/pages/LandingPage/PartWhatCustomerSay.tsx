@@ -19,17 +19,17 @@ const part_what_customer_say = [
   {
     logo: customer1,
     title: 'Jenny Boston Boutique',
-    desc: 'We love this company and the people...top notch. They are innovative, approachable, extremely hard working and have become a true partner for us. As both a traditional e-comm and LIVE selling company, we were looking for a way to secure more inventory in a seamless manner. Kiwi has done that and will continue to expand!',
+    desc: '“We love this company and the people...top notch. They are innovative, approachable, extremely hard working and have become a true partner for us. As both a traditional e-comm and LIVE selling company, we were looking for a way to secure more inventory in a seamless manner. Kiwi has done that and will continue to expand!”',
   },
   {
     logo: customer2,
     title: 'Bella Jade',
-    desc: 'Been using this app for a few months and am in love! Price point is great for margins, styles are on trend, photos are perfect and shipping is on fire! Thank you for providing excellent customer service when needed!',
+    desc: '“Been using this app for a few months and am in love! Price point is great for margins, styles are on trend, photos are perfect and shipping is on fire! Thank you for providing excellent customer service when needed!”',
   },
   {
     logo: customer3,
     title: 'Amber Moon',
-    desc: 'Highly recommend! I use several other drop shippers and kiwi by far is my favorite. They are very intentional with the collections they offer and the inventory choice is the best out there. I feel like they sell styles I actually want in my shop that I would pick myself. So happy with the kiwi experience and look forward to a continued relationship as we both grow together.',
+    desc: '“Highly recommend! I use several other drop shippers and kiwi by far is my favorite. They are very intentional with the collections they offer and the inventory choice is the best out there. I feel like they sell styles I actually want in my shop that I would pick myself. So happy with the kiwi experience and look forward to a continued relationship as we both grow together.”',
   },
 ];
 
@@ -52,7 +52,7 @@ const PartWhatCustomerSay = () => {
         <div className={css.line_3}>
           {isDesktop ? (
             part_what_customer_say.map(({ title, desc, logo }) => (
-              <section className={css.section}>
+              <section className={css.section} key={title}>
                 <div className={css.logo}>
                   <img src={logo} alt="logo" />
                 </div>
@@ -70,7 +70,7 @@ const PartWhatCustomerSay = () => {
           ) : (
             <Swiper effect="cards" grabCursor modules={[EffectCards]} className="mySwiper">
               {part_what_customer_say.map(({ title, desc, logo }) => (
-                <SwiperSlide>
+                <SwiperSlide key={title}>
                   <section className={css.section}>
                     <div className={css.logo}>
                       <img src={logo} alt="logo" />

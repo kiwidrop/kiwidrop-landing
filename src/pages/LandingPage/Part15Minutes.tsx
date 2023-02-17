@@ -9,7 +9,7 @@ import css from './Part15Minutes.module.scss';
 const part_15_minutes = [
   {
     icon: BuySamplesHowto,
-    title: 'Buy Samples',
+    title: 'Buy Samples, No Minimums',
     desc: 'One or two pieces is all you need to try-on, make fit videos and ads, or go live. Your content is king!',
   },
   {
@@ -25,12 +25,12 @@ const part_15_minutes = [
   {
     icon: QAHowto,
     title: 'Quality Assurance & Shipping',
-    desc: 'Our warehouse will combine your orders and quality control every item prior to shipping.',
+    desc: 'Your orders are combined, and every item quality-controlled prior to shipping.',
   },
   {
     icon: OrderHowto,
-    title: 'Order Received!',
-    desc: 'Your customers receives orders with your branded invoice and leave you a glowing review!',
+    title: 'Customer Delight!',
+    desc: 'Your customers receive orders within 2-10 business days, and leave you glowing reviews!',
   },
 ];
 const Part15Minutes = () => (

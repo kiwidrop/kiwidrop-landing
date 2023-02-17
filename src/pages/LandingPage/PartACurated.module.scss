@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   background: #202221;
-  row-gap: 36px;
+  gap: 36px;
   .line_1 {
     font-weight: 500;
     font-size: 40px;
@@ -27,7 +27,7 @@
   .line_3 {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 36px;
+    gap: 36px;
     .section {
       min-width: 0;
       display: flex;
@@ -57,7 +57,7 @@
         .brand_wrapper {
           margin-top: 24px;
           display: flex;
-          column-gap: 12px;
+          gap: 12px;
           overflow-x: auto;
         }
       }
@@ -83,7 +83,7 @@
       }
       .line_3 {
         grid-template-columns: repeat(1, 1fr);
-        row-gap: 36px;
+        gap: 36px;
         .section {
           .title {
             font-size: 24px;

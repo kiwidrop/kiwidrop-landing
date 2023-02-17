@@ -57,7 +57,7 @@ const PartBackedBy = () => {
             )}
           >
             {items.map((src) => (
-              <div className={css.img_wrapper}>
+              <div className={css.img_wrapper} key={src}>
                 <img key={src} src={src} alt="img" />
               </div>
             ))}

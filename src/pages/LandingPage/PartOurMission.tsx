@@ -22,15 +22,15 @@ const PartOurMission = () => {
         <div className={css.block_wrapper}>
           <div className={css.line_1}>Our Mission</div>
           <div className={css.line_2}>
-            We believe the future of retail is <span>SOCIAL</span> and the majority of product discovery will be driven
-            by
-            <span>INDIVIDUALS</span> that have <span>INFLUENCE</span> their audiences.
+            The future of retail is <span>SOCIAL</span> and driven by <span>INDIVIDUALS</span>
           </div>
           <div className={css.line_3}>
-            Our software and cloud inventory is the backbone that empowers everyone from micro influencers to mega
-            boutiques with zero-overhead access to highly curated, on-demand, trending fashion.
+            {`Whether you're a mega boutique or a micro influencer, everyday individuals like you have the power to shape the way we connect, discover, and shop!`}
           </div>
-          <div className={css.line_4}>Start now and sell in less than 15 minutes.</div>
+          <div className={css.line_4}>
+            Our software, cloud inventory catalog and fulfillment services is the backbone that empowers you with
+            zero-overhead access to highly curated and on-demand fashion.
+          </div>
           <div className={css.line_5}>
             <Button shape="rounded" color="light_dark" bordered type="link" href={DS2_URL}>
               Join The Revolution!

@@ -26,8 +26,8 @@ const PartScaleYourLife = () => {
           </Button>
         </div>
         <div className={css.line_4}>
-          Join a community of 5,000s of live selling and traditional boutiques, immediately start selling high-margin
-          products from the US and abroad
+          Join a community of thousands of live selling and traditional boutiques, immediately start selling high-margin
+          products from the US and abroad.
         </div>
       </div>
       <div className={cn(css.right)}>

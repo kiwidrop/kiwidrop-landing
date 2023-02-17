@@ -75,12 +75,12 @@
   }
 
   &.is_m {
-    row-gap: 24px;
+    gap: 24px;
     .line_2 {
       font-size: 32px;
     }
     .line_3 {
-      column-gap: 16px;
+      gap: 16px;
       display: flex;
       overflow-x: hidden;
       overflow-y: hidden;
