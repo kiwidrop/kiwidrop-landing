@@ -1,2 +1,34 @@
 .landing_page {
+  .part_wrapper {
+    &.part_scale_brand_wrapper,
+    &.part_a_curated_wrapper,
+    &.part_quantity_assured_wrapper {
+      background-color: #202221;
+    }
+    &.part_15_minutes_wrapper,
+    &.part_sell_what_wrapper,
+    &.part_feature_wrapper,
+    &.part_curated_wrapper,
+    &.part_what_customer_say_wrapper,
+    &.part_backed_by_wrapper {
+      background-color: #f5f5f5;
+    }
+  }
+
+  &.is_desktop {
+    .part_wrapper {
+      padding: 70px;
+
+      > div {
+        max-width: 1320px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  &.is_m {
+    .part_wrapper {
+      padding: 48px 16px;
+    }
+  }
 }

@@ -21,30 +21,48 @@ const LandingPage = () => {
   const isDesktop = useDesktop();
 
   return (
-    <div className={cn(css.landing_page, { is_desktop: isDesktop }, { is_m: !isDesktop })}>
+    <div className={cn(css.landing_page, { [css.is_desktop]: isDesktop }, { [css.is_m]: !isDesktop })}>
       <PartScaleYourLife />
 
       <PartOurMission />
 
       <PartPlatforms />
 
-      <PartScaleBrand />
+      <div className={cn(css.part_wrapper, css.part_scale_brand_wrapper)}>
+        <PartScaleBrand />
+      </div>
 
-      <Part15Minutes />
+      <div className={cn(css.part_wrapper, css.part_15_minutes_wrapper)}>
+        <Part15Minutes />
+      </div>
 
-      <PartACurated />
+      <div className={cn(css.part_wrapper, css.part_a_curated_wrapper)}>
+        <PartACurated />
+      </div>
 
-      <PartSellWhat />
+      <div className={cn(css.part_wrapper, css.part_sell_what_wrapper)}>
+        <PartSellWhat />
+      </div>
 
-      <PartFeature />
+      <div className={cn(css.part_wrapper, css.part_feature_wrapper)}>
+        <PartFeature />
+      </div>
 
-      <PartCurated />
+      <div className={cn(css.part_wrapper, css.part_curated_wrapper)}>
+        <PartCurated />
+      </div>
 
-      <PartQuantityAssured />
+      <div className={cn(css.part_wrapper, css.part_quantity_assured_wrapper)}>
+        <PartQuantityAssured />
+      </div>
 
-      <PartWhatCustomerSay />
+      <div className={cn(css.part_wrapper, css.part_what_customer_say_wrapper)}>
+        <PartWhatCustomerSay />
+      </div>
 
-      <PartBackedBy />
+      <div className={cn(css.part_wrapper, css.part_backed_by_wrapper)}>
+        <PartBackedBy />
+      </div>
 
       <Footer />
     </div>

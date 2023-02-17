@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 70px;
   background: #202221;
   row-gap: 36px;
   .line_1 {
@@ -75,7 +74,6 @@
 
   @at-root .is_m {
     .part_a_curated {
-      padding: 48px 16px;
       .line_1 {
         width: 100%;
         font-size: 32px;

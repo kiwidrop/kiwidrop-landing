@@ -1,6 +1,4 @@
 .part_curated {
-  padding: 70px;
-  background: #f5f5f5;
   display: grid;
   grid-template-columns: 7fr 10fr;
   grid-column-gap: 36px;
@@ -33,12 +31,10 @@
 
   @at-root .is_m {
     .part_curated {
-      padding: 48px 16px;
       grid-template-columns: none;
       display: flex;
       flex-direction: column;
       flex-flow: column-reverse;
-      background-color: #fff;
       row-gap: 24px;
       .left {
         .line_1 {

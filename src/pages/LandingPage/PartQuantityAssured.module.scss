@@ -1,5 +1,4 @@
 .part_quantity_assured {
-  padding: 70px 15%;
   background: #202221;
   display: flex;
   flex-direction: column;
@@ -84,7 +83,6 @@
 
   @at-root .is_m {
     .part_quantity_assured {
-      padding: 48px 16px;
       row-gap: 24px;
       .line_2 {
         font-size: 32px;

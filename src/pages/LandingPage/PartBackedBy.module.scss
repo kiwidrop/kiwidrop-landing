@@ -1,5 +1,4 @@
 .part_backed_by {
-  padding: 70px;
   background-color: #f5f5f5;
   .line_1 {
     font-weight: 500;
@@ -44,7 +43,6 @@
 
   @at-root .is_m {
     .part_backed_by {
-      padding: 48px 16px;
       .line_1 {
         font-size: 32px;
       }
