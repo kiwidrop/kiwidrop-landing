@@ -1,0 +1,108 @@
+.part_our_mission {
+  position: relative;
+  .video_wrapper {
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      outline: none;
+    }
+  }
+  .block_wrapper_wrapper {
+    .block_wrapper {
+      padding: 36px;
+      background: rgba(32, 34, 33, 0.9);
+      display: grid;
+      grid-gap: 16px;
+      .line_1 {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 120%;
+        color: #cff963;
+      }
+      .line_2 {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 140%;
+        color: #ffffff;
+        > span {
+          color: #cff963;
+        }
+      }
+      .line_3,
+      .line_4 {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        color: #ffffff;
+      }
+      .line_5 {
+        button {
+          border-color: #c7c7c7;
+          background: rgba(255, 255, 255, 0.05);
+          color: #fff;
+          border-width: 2px;
+        }
+      }
+    }
+  }
+
+  &.is_m {
+    .part_our_mission {
+      .video_wrapper {
+        position: relative;
+      }
+      .block_wrapper_wrapper {
+        .block_wrapper {
+          grid-gap: 24px;
+          background: #202221e6;
+          padding: 48px 16px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .line_1 {
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 120%;
+          }
+          .line_2 {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 140%;
+            text-align: center;
+          }
+          .line_3 {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+@at-root .is_desktop {
+  .part_our_mission {
+    .video_wrapper {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 0;
+    }
+    .block_wrapper_wrapper {
+      position: relative;
+      z-index: 1;
+      padding: 200px 70px;
+      .block_wrapper {
+        padding: 36px;
+        width: 55%;
+        max-width: 800px;
+        background: rgba(32, 34, 33, 0.9);
+        border-radius: 24px;
+        display: grid;
+        grid-gap: 16px;
+      }
+    }
+  }
+}

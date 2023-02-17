@@ -1,0 +1,111 @@
+.part_feature {
+  background: #f5f5f5;
+  padding: 70px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 36px;
+  .line_1 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #666;
+  }
+  .line_2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 120%;
+    color: #000000;
+    > span {
+      color: #6538e5;
+    }
+  }
+  .line_3 {
+    .section_wrapper {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 36px;
+      .section {
+        padding: 24px;
+        background: #ffffff;
+        border-radius: 16px;
+        box-shadow: 0 2px 10px #0000000f;
+        .title {
+          font-weight: 500;
+          font-size: 24px;
+          line-height: 120%;
+          display: flex;
+          color: #111111;
+        }
+        .desc {
+          margin-top: 16px;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 140%;
+          color: #666666;
+        }
+      }
+    }
+  }
+  .line_4 {
+    margin: 0 auto;
+  }
+
+  @at-root .is_m {
+    .part_feature {
+      padding: 48px 16px;
+      row-gap: 24px;
+      .line_2 {
+        font-size: 32px;
+      }
+      .line_3 {
+        grid-template-columns: none;
+        gap: unset;
+        .section {
+          padding: 16px;
+          .title {
+            font-size: 20px;
+          }
+          .desc {
+            margin-top: 8px;
+          }
+        }
+        .section_wrapper {
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+          overflow: hidden;
+          position: relative;
+          .mask {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 40px;
+            background: linear-gradient(to bottom, transparent, #f5f5f5);
+          }
+        }
+        .btn_wrapper {
+          background: linear-gradient(180deg, #f2f2f2 0%, rgba(242, 242, 242, 0) 100%);
+          text-align: center;
+          .see_more {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 140%;
+            text-align: center;
+            color: #000000;
+            cursor: pointer;
+            span {
+              padding-right: 8px;
+            }
+          }
+          .line_4 {
+            margin-top: 24px;
+          }
+        }
+      }
+    }
+  }
+}
