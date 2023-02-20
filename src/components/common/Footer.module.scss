@@ -17,10 +17,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 100px;
-  }
-
-  a:not(:hover, :active, :focus) {
-    color: inherit;
+    box-sizing: content-box;
   }
 
   .section {
@@ -91,6 +88,10 @@
     }
   }
 
+  a:not(:hover, :active, :focus) {
+    color: inherit;
+  }
+
   @media screen and (min-width: 767px) and (max-width: 1140px) {
     .main {
       grid-template-columns: repeat(2, 1fr);
@@ -99,7 +100,12 @@
   }
 
   @at-root .is_desktop {
+    .main {
+      max-width: var(--max-content);
+      margin: 0 auto;
+    }
     .secondary {
+      max-width: var(--max-content);
       .secondary_item {
         &:not(:first-child)::before {
           content: '';

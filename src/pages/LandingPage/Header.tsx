@@ -98,17 +98,19 @@ const Header = () => {
   if (isDesktop) {
     return (
       <div className={cn(css.ns_com_header_main, css.is_desktop, { [css.scrolled]: isScrolled })}>
-        <div className={css.left}>
-          {logo}
-          {menu}
-        </div>
-        <div className={css.right}>
-          <Button shape="rounded" color={isScrolled ? 'dark' : 'white'} type="link" href={DS2_URL}>
-            Log in
-          </Button>
-          <Button shape="rounded" color="white" style={{ background: '#CFF963' }} type="link" href={DS2_URL}>
-            Join Now
-          </Button>
+        <div className={css.content}>
+          <div className={css.left}>
+            {logo}
+            {menu}
+          </div>
+          <div className={css.right}>
+            <Button shape="rounded" color={isScrolled ? 'dark' : 'white'} type="link" href={DS2_URL}>
+              Log in
+            </Button>
+            <Button shape="rounded" color="white" style={{ background: '#CFF963' }} type="link" href={DS2_URL}>
+              Join Now
+            </Button>
+          </div>
         </div>
       </div>
     );
@@ -116,21 +118,23 @@ const Header = () => {
 
   return (
     <div className={cn(css.ns_com_header_main, css.is_m)}>
-      <motion.div initial={false} animate={isMenuVisible ? 'open' : 'closed'} custom={height} ref={containerRef}>
-        <motion.div className={css.menu_back} variants={sidebar}>
-          <div className={css.logo}>{logo}</div>
-          {menu}
-          <div className={css.minus}>
-            <HiMinus />
-          </div>
-          {secondMenu}
+      <div className={css.content}>
+        <motion.div initial={false} animate={isMenuVisible ? 'open' : 'closed'} custom={height} ref={containerRef}>
+          <motion.div className={css.menu_back} variants={sidebar}>
+            <div className={css.logo}>{logo}</div>
+            {menu}
+            <div className={css.minus}>
+              <HiMinus />
+            </div>
+            {secondMenu}
+          </motion.div>
+          <MenuToggle toggle={toggleMenu} />
         </motion.div>
-        <MenuToggle toggle={toggleMenu} />
-      </motion.div>
-      {logo}
-      <a className={css.join_now} href={DS2_URL}>
-        Join Now
-      </a>
+        {logo}
+        <a className={css.join_now} href={DS2_URL}>
+          Join Now
+        </a>
+      </div>
     </div>
   );
 };

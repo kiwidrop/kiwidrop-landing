@@ -8,13 +8,14 @@ const PartOurMission = () => {
   const isDesktop = useDesktop();
   const videoURL = isDesktop
     ? 'https://cdn.shopify.com/videos/c/o/v/16c1ae80cf374b0083f359278b036a10.webm'
-    : 'https://cdn.shopify.com/videos/c/o/v/5fbd7d8039444254a75eb61bbdf60110.webm';
+    : 'https://cdn.shopify.com/videos/c/o/v/707f09be6b2843dcae4eec84577ce669.mp4';
+  const videoType = isDesktop ? 'video/webm' : 'video/mp4';
 
   return (
     <div className={css.part_our_mission}>
       <div className={css.video_wrapper}>
         <video muted autoPlay loop>
-          <source src={videoURL} type="video/webm" />
+          <source src={videoURL} type={videoType} />
           Your browser not support HTML5 video tag.
         </video>
       </div>

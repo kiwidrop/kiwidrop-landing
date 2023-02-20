@@ -5,3 +5,16 @@
     --font-family: 'JostVariable', sans-serif;
   }
 }
+
+:root:root {
+  --max-content: 1320px;
+  --padding-tb: 70px;
+  --padding-lr: 70px;
+}
+
+@media screen and (max-width: 767px) {
+  :root:root {
+    --padding-tb: 48px;
+    --padding-lr: 16px;
+  }
+}
