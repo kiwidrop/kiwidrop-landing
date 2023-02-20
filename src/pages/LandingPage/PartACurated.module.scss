@@ -18,7 +18,7 @@
       font-weight: 400;
       font-size: 16px;
       line-height: 140%;
-      color: #dddddd;
+      color: #fff;
       text-align: center;
       margin-top: 16px;
     }
@@ -89,11 +89,13 @@
             font-size: 24px;
           }
           .desc_wrapper {
-            background: #cee46a1a;
+            background: #2f3130;
             padding: 16px;
           }
           .brand_wrapper_wrapper {
             .brand_wrapper {
+              margin-top: 10px;
+              gap: 8px;
               border-radius: 2px;
               img {
                 height: 60px;

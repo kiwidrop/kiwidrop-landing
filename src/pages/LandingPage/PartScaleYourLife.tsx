@@ -1,5 +1,4 @@
 import cn from 'classnames';
-import { useEffect, useRef } from 'react';
 import { FaAngleUp } from 'react-icons/fa';
 
 import { Button } from '@/components/common';
@@ -10,6 +9,11 @@ import css from './PartScaleYourLife.module.scss';
 
 const PartScaleYourLife = () => {
   const isDesktop = useDesktop();
+
+  const handleSee = () => {
+    // 点击后滚动到视频部分
+    window.scrollTo(0, window.innerHeight);
+  };
 
   if (isDesktop) {
     return (
@@ -46,7 +50,7 @@ const PartScaleYourLife = () => {
           <div className={css.right_content} />
         </div>
         <div className={css.see_why_btn_wrapper}>
-          <Button className={css.see_why_btn} shape="rounded" type="link" href={DS2_URL}>
+          <Button className={css.see_why_btn} shape="rounded" onClick={handleSee}>
             See what happens
             <FaAngleUp />
           </Button>

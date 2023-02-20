@@ -8,14 +8,14 @@ const PartOurMission = () => {
   const isDesktop = useDesktop();
   const videoURL = isDesktop
     ? 'https://cdn.shopify.com/videos/c/o/v/16c1ae80cf374b0083f359278b036a10.webm'
-    : 'https://cdn.shopify.com/videos/c/o/v/707f09be6b2843dcae4eec84577ce669.mp4';
-  const videoType = isDesktop ? 'video/webm' : 'video/mp4';
+    : 'https://cdn.shopify.com/videos/c/o/v/5fbd7d8039444254a75eb61bbdf60110.webm';
 
   return (
     <div className={css.part_our_mission}>
       <div className={css.video_wrapper}>
-        <video muted autoPlay loop>
-          <source src={videoURL} type={videoType} />
+        <video muted autoPlay loop poster="benefits-of-coding.jpg" preload="auto">
+          <source src={videoURL} type="video/webm" />
+          <source src="https://cdn.shopify.com/videos/c/o/v/7d1285ced9724825a4b4bf043f72a95d.mp4" type="video/mp4" />
           Your browser not support HTML5 video tag.
         </video>
       </div>
@@ -34,7 +34,7 @@ const PartOurMission = () => {
           </div>
           <div className={css.line_5}>
             <Button shape="rounded" color="light_dark" bordered type="link" href={DS2_URL}>
-              Join The Revolution!
+              {isDesktop ? 'Join The Revolution!' : 'Learn More'}
             </Button>
           </div>
         </div>

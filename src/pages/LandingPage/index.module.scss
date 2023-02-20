@@ -17,7 +17,7 @@
 
   &.is_desktop {
     .part_wrapper {
-      padding: 70px;
+      padding: var(--padding-tb);
 
       > div {
         max-width: var(--max-content);
@@ -28,7 +28,7 @@
 
   &.is_m {
     .part_wrapper {
-      padding: 48px 16px;
+      padding: var(--padding-tb) var(--padding-lr);
     }
   }
 }
