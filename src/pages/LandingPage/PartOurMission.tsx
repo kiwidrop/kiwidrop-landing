@@ -13,7 +13,13 @@ const PartOurMission = () => {
   return (
     <div className={css.part_our_mission}>
       <div className={css.video_wrapper}>
-        <video muted autoPlay loop poster="benefits-of-coding.jpg" preload="auto">
+        <video
+          muted
+          autoPlay
+          loop
+          poster="https://cdn.shopify.com/s/files/1/0532/6186/1018/files/live-thumbnail.webp?v=1676863824"
+          preload="auto"
+        >
           <source src={videoURL} type="video/webm" />
           <source src="https://cdn.shopify.com/videos/c/o/v/7d1285ced9724825a4b4bf043f72a95d.mp4" type="video/mp4" />
           Your browser not support HTML5 video tag.

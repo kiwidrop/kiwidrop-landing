@@ -33,10 +33,12 @@ const sidebar = {
 
 const Header = () => {
   const isDesktop = useDesktop();
-  const [isScrolled, setIsScrolled] = useState(false);
+
+  const [isScrollDown, setIsScrollDown] = useState(false);
   const [isMenuVisible, setIsMenuVisible] = useState(false);
   const containerRef = useRef(null);
   const [height, setHeight] = useState(0);
+  const currentScrollTop = useRef(null);
 
   const openDS2 = () => {
     window.open(DS2_URL);
@@ -44,7 +46,12 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(document.documentElement.scrollTop > 0);
+      if (document.documentElement.scrollTop > currentScrollTop.current) {
+        setIsScrollDown(true);
+      } else {
+        setIsScrollDown(false);
+      }
+      currentScrollTop.current = document.documentElement.scrollTop;
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -97,14 +104,14 @@ const Header = () => {
 
   if (isDesktop) {
     return (
-      <div className={cn(css.ns_com_header_main, css.is_desktop, { [css.scrolled]: isScrolled })}>
+      <div className={cn(css.ns_com_header_main, css.is_desktop, { [css.scrolledDown]: isScrollDown })}>
         <div className={css.content}>
           <div className={css.left}>
             {logo}
             {menu}
           </div>
           <div className={css.right}>
-            <Button shape="rounded" color={isScrolled ? 'dark' : 'white'} type="link" href={DS2_URL}>
+            <Button shape="rounded" color={isScrollDown ? 'dark' : 'white'} type="link" href={DS2_URL}>
               Log in
             </Button>
             <Button shape="rounded" color="white" style={{ background: '#CFF963' }} type="link" href={DS2_URL}>

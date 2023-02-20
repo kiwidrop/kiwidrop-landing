@@ -113,7 +113,7 @@
       }
     }
 
-    @media screen and (min-width: 1321px) {
+    @media screen and (min-width: 1340px) {
       .part_scale_your_live_main {
         .content {
           .left_content {
@@ -163,36 +163,6 @@
       }
     }
   }
-
-  // @at-root .is_m {
-  //   .part_scale_your_live_main {
-  //     display: flex;
-  //     flex-direction: column-reverse;
-  //     .left {
-  //       padding: 48px 16px;
-  //       position: absolute;
-  //       z-index: 2;
-  //       background: linear-gradient(to bottom, transparent 0%, #fff 24%, white);
-  //       .line_1 {
-  //         text-align: center;
-  //         font-size: 32px;
-  //       }
-  //       .line_2 {
-  //         font-size: 20px;
-  //         text-align: center;
-  //       }
-  //       .line_3 {
-  //         justify-content: center;
-  //         button {
-  //           flex: 1;
-  //         }
-  //       }
-  //       .line_4 {
-  //         text-align: center;
-  //       }
-  //     }
-  //   }
-  // }
 
   @keyframes rowup {
     0% {
