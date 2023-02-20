@@ -3,7 +3,6 @@
   z-index: 999;
   width: 100%;
   transition: all 0.3s;
-  background-color: #fff;
 
   .content {
     display: flex;
@@ -42,8 +41,8 @@
     }
   }
 
-  &.scrolledDown {
-    position: relative;
+  &.scrolled {
+    background-color: #fff;
   }
 
   &.is_desktop {

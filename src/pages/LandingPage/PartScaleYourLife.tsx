@@ -27,6 +27,7 @@ const PartScaleYourLife = () => {
               <img src="https://cdn.shopify.com/s/files/1/0532/6186/1018/files/Waterfall.webp?v=1676349541" alt="img" />
             </div>
           </div>
+          <div className={css.right_content} />
         </div>
         <div className={css.content}>
           <div className={css.left_content}>
@@ -47,7 +48,6 @@ const PartScaleYourLife = () => {
               high-margin products from the US and abroad.
             </div>
           </div>
-          <div className={css.right_content} />
         </div>
         <div className={css.see_why_btn_wrapper}>
           <Button className={css.see_why_btn} shape="rounded" onClick={handleSee}>
