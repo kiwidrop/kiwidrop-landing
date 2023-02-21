@@ -72,6 +72,22 @@
     }
   }
 
+  @at-root .is_desktop {
+    .part_a_curated {
+      .line_3 {
+        .section {
+          .desc_wrapper .brand_wrapper {
+            img {
+              flex: 1;
+              min-width: 0;
+              overflow: hidden;
+            }
+          }
+        }
+      }
+    }
+  }
+
   @at-root .is_m {
     .part_a_curated {
       .line_1 {
