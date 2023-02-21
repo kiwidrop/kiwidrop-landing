@@ -23,8 +23,8 @@ const PartScaleYourLife = () => {
         <div className={css.right}>
           <div className={css.list}>
             <div className={css.rowup}>
-              <img src="https://cdn.shopify.com/s/files/1/0532/6186/1018/files/Waterfall.webp?v=1676349541" alt="img" />
-              <img src="https://cdn.shopify.com/s/files/1/0532/6186/1018/files/Waterfall.webp?v=1676349541" alt="img" />
+              <img src="https://cdn.shopify.com/s/files/1/0532/6186/1018/files/Waterfall.webp?v=1676349541" alt="" />
+              <img src="https://cdn.shopify.com/s/files/1/0532/6186/1018/files/Waterfall.webp?v=1676349541" alt="" />
             </div>
           </div>
           <div className={css.right_content} />
@@ -64,8 +64,14 @@ const PartScaleYourLife = () => {
       <div className={css.right}>
         <div className={css.list}>
           <div className={css.rowup}>
-            <img src="https://cdn.shopify.com/s/files/1/0532/6186/1018/files/Waterfall.webp?v=1676349541" alt="img" />
-            <img src="https://cdn.shopify.com/s/files/1/0532/6186/1018/files/Waterfall.webp?v=1676349541" alt="img" />
+            <img
+              src="https://cdn.shopify.com/s/files/1/0532/6186/1018/files/landing-waterfall-mobile.webp?v=16769441911"
+              alt=""
+            />
+            <img
+              src="https://cdn.shopify.com/s/files/1/0532/6186/1018/files/landing-waterfall-mobile.webp?v=1676944191"
+              alt=""
+            />
           </div>
         </div>
       </div>

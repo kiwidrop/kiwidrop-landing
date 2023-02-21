@@ -82,6 +82,8 @@
       width: 70px;
       text-align: end;
       white-space: nowrap;
+      opacity: 0;
+      pointer-events: none;
     }
     .menu_toggle {
       position: relative;

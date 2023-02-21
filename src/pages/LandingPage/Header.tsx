@@ -65,7 +65,7 @@ const Header = () => {
     }
   }, []);
 
-  const logo = <img role="presentation" src={LOGO} alt="Logo" className={css.logo} onClick={openDS2} />;
+  const logo = <img role="presentation" src={LOGO} alt="" className={css.logo} onClick={openDS2} />;
   const menu = (
     <ul className={css.menu_wrapper}>
       <li className={css.menu_item_wrapper}>
@@ -148,7 +148,7 @@ const Header = () => {
         </motion.div>
         {logo}
         <a className={css.join_now} href={DS2_URL}>
-          Join Now
+          {/* Join Now */}
         </a>
       </div>
     </div>

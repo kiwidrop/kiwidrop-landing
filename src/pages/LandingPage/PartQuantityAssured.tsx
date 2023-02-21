@@ -45,7 +45,7 @@ const PartQuantityAssured = () => {
             </div>
           </section>
         ))}
-        {isDesktop && <img className={css.back_img} src={allArrows} alt="arrow" />}
+        {isDesktop && <img className={css.back_img} src={allArrows} alt="" />}
       </div>
       <div className={css.line_4}>
         <Button shape="rounded" color="light_dark" bordered type="link" href={DS2_URL}>

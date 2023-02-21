@@ -11,7 +11,7 @@ const PartSellWhat = () => (
     </p>
     <div className={css.line_2}>
       <div className={css.left}>
-        <img src="https://cdn.shopify.com/s/files/1/0532/6186/1018/files/Science-art.webp?v=1676351271" alt="img" />
+        <img src="https://cdn.shopify.com/s/files/1/0532/6186/1018/files/Science-art.webp?v=1676351271" alt="" />
       </div>
       <div className={css.right}>
         <p className={css.title}>Curated Assortment = Science + Art</p>

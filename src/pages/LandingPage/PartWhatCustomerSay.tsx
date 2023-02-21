@@ -54,7 +54,7 @@ const PartWhatCustomerSay = () => {
             part_what_customer_say.map(({ title, desc, logo }) => (
               <section className={css.section} key={title}>
                 <div className={css.logo}>
-                  <img src={logo} alt="logo" />
+                  <img src={logo} alt="" />
                 </div>
                 <div className={css.title}>{title}</div>
                 <div className={css.star}>
@@ -73,7 +73,7 @@ const PartWhatCustomerSay = () => {
                 <SwiperSlide key={title}>
                   <section className={css.section}>
                     <div className={css.logo}>
-                      <img src={logo} alt="logo" />
+                      <img src={logo} alt="" />
                     </div>
                     <p className={css.title}>{title}</p>
                     <div className={css.star}>

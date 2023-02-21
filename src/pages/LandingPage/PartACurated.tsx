@@ -46,7 +46,7 @@ const PartACurated = () => (
             <div className={css.brand_wrapper_wrapper}>
               <div className={css.brand_wrapper}>
                 {brand.map((src) => (
-                  <img src={src} alt="brand" key={src} />
+                  <img src={src} alt="" key={src} />
                 ))}
               </div>
             </div>

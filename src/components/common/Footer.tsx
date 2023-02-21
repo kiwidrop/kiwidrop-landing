@@ -23,7 +23,7 @@ function Footer({ className, style }: Props): JSX.Element {
         <div className={css.main}>
           <div className={css.section}>
             <div className={css.section_title}>
-              <img role="presentation" src={LOGO} alt="Logo" className={css.logo} onClick={openDS2} />
+              <img role="presentation" src={LOGO} alt="" className={css.logo} onClick={openDS2} />
             </div>
             <div className={css.section_title}>Your Dropshipping Partner</div>
             <div className={css.section_body}>

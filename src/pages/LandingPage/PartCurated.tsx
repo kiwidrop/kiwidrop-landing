@@ -20,7 +20,7 @@ const PartCurated = () => (
       </div>
     </div>
     <div className={css.right}>
-      <img src="https://cdn.shopify.com/s/files/1/0532/6186/1018/files/Likes.webp?v=1676351271" alt="img" />
+      <img src="https://cdn.shopify.com/s/files/1/0532/6186/1018/files/Likes.webp?v=1676351271" alt="" />
     </div>
   </div>
 );
