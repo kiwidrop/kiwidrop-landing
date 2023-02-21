@@ -35,9 +35,12 @@ const Header = () => {
   const isDesktop = useDesktop();
 
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isScrolledUp, setIsScrolledUp] = useState(false);
   const [isMenuVisible, setIsMenuVisible] = useState(false);
   const containerRef = useRef(null);
   const [height, setHeight] = useState(0);
+
+  const curScrollTop = useRef(null);
 
   const openDS2 = () => {
     window.open(DS2_URL);
@@ -45,9 +48,14 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(document.documentElement.scrollTop > 0);
+      const nowScrollTop = document.documentElement.scrollTop;
+      setIsScrolled(nowScrollTop > 0);
+      setIsScrolledUp(nowScrollTop > 0 && curScrollTop.current > nowScrollTop);
+      curScrollTop.current = nowScrollTop;
     };
+
     window.addEventListener('scroll', handleScroll);
+
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
@@ -98,7 +106,14 @@ const Header = () => {
 
   if (isDesktop) {
     return (
-      <div className={cn(css.ns_com_header_main, css.is_desktop, { [css.scrolled]: isScrolled })}>
+      <div
+        className={cn(
+          css.ns_com_header_main,
+          css.is_desktop,
+          { [css.scrolled]: isScrolled },
+          { [css.scrolled_up]: isScrolledUp }
+        )}
+      >
         <div className={css.content}>
           <div className={css.left}>
             {logo}

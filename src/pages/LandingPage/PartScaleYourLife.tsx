@@ -12,7 +12,7 @@ const PartScaleYourLife = () => {
 
   const handleSee = () => {
     // 点击后滚动到视频部分
-    window.scrollTo(0, window.innerHeight - 88);
+    window.scrollTo(0, window.innerHeight);
   };
 
   if (isDesktop) {

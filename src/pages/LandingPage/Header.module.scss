@@ -2,7 +2,7 @@
   position: fixed;
   z-index: 999;
   width: 100%;
-  transition: all 0.3s;
+  transition: all 0.4s;
 
   .content {
     display: flex;
@@ -42,6 +42,10 @@
   }
 
   &.scrolled {
+    opacity: 0;
+  }
+  &.scrolled_up {
+    opacity: 1;
     background-color: #fff;
   }
 
