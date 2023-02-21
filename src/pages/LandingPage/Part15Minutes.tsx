@@ -35,9 +35,9 @@ const part_15_minutes = [
 ];
 const Part15Minutes = () => (
   <div className={css.part_15_minutes}>
-    <div className={css.line_1}>
+    <p className={css.line_1}>
       15 minutes from sign up to <span>selling</span>!
-    </div>
+    </p>
     <div className={css.line_2}>
       {part_15_minutes.map(({ title, desc, icon }) => (
         <section key={title} className={css.section_item}>
@@ -45,8 +45,8 @@ const Part15Minutes = () => (
             <img src={icon} alt={title} />
           </div>
           <div className={css.others}>
-            <div className={css.title}>{title}</div>
-            <div className={css.desc}>{desc}</div>
+            <p className={css.title}>{title}</p>
+            <p className={css.desc}>{desc}</p>
           </div>
         </section>
       ))}

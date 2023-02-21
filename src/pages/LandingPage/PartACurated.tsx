@@ -28,21 +28,21 @@ const part_a_curated = [
 const PartACurated = () => (
   <div className={css.part_a_curated}>
     <div className={css.line_1}>
-      <div>
+      <p>
         A <span>curated</span> catalog by a community of tastemakers featuring the hottest US and Intl. fashion lines.
-      </div>
-      <div className={css.second_text}>
+      </p>
+      <p className={css.second_text}>
         Everything we sell has been personally selected using our technology and a dedicated product expert. Our experts
         bring a wealth of experience, knowledge, and intuition to our product selection.
-      </div>
+      </p>
     </div>
 
     <div className={css.line_3}>
       {part_a_curated.map(({ title, desc, brand }) => (
         <section className={css.section} key={title}>
-          <div className={css.title}>{title}</div>
+          <p className={css.title}>{title}</p>
           <div className={css.desc_wrapper}>
-            <div className={css.desc}>{desc}</div>
+            <p className={css.desc}>{desc}</p>
             <div className={css.brand_wrapper_wrapper}>
               <div className={css.brand_wrapper}>
                 {brand.map((src) => (

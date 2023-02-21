@@ -27,17 +27,17 @@ const PartOurMission = () => {
       </div>
       <div className={css.block_wrapper_wrapper}>
         <div className={css.block_wrapper}>
-          <div className={css.line_1}>Our Mission</div>
-          <div className={css.line_2}>
+          <p className={css.line_1}>Our Mission</p>
+          <p className={css.line_2}>
             The future of retail is <span>SOCIAL</span> and driven by <span>INDIVIDUALS</span>
-          </div>
-          <div className={css.line_3}>
+          </p>
+          <p className={css.line_3}>
             {`Whether you're a mega boutique or a micro influencer, everyday individuals like you have the power to shape the way we connect, discover, and shop!`}
-          </div>
-          <div className={css.line_4}>
+          </p>
+          <p className={css.line_4}>
             Our software, cloud inventory catalog and fulfillment services is the backbone that empowers you with
             zero-overhead access to highly curated and on-demand fashion.
-          </div>
+          </p>
           <div className={css.line_5}>
             <Button shape="rounded" color="light_dark" bordered type="link" href={DS2_URL}>
               {isDesktop ? 'Join The Revolution!' : 'Learn More'}

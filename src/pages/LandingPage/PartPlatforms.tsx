@@ -11,7 +11,7 @@ const part_platforms = [facebook, shopify, commentSold, tiktok, ins, poshmark];
 
 const PartPlatforms = () => (
   <div className={css.part_platforms}>
-    <div className={css.line_1}>Platforms & Integrations</div>
+    <p className={css.line_1}>Platforms & Integrations</p>
     <p className={css.line_2}>Unleash your ability to grow.</p>
     <p className={css.line_3}>All you need is an iPhone, ring light and Kiwi.</p>
     <div className={css.line_4}>

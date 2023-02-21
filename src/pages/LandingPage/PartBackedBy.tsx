@@ -43,7 +43,7 @@ const PartBackedBy = () => {
 
   return (
     <div className={css.part_backed_by}>
-      <div className={css.line_1}>Backed by founders and executives from</div>
+      <p className={css.line_1}>Backed by founders and executives from</p>
       <div className={css.line_2}>
         {new_part_backed_by.map((items, idx) => (
           <section

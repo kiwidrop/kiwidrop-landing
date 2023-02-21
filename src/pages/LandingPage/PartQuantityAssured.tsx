@@ -28,11 +28,11 @@ const PartQuantityAssured = () => {
 
   return (
     <div className={css.part_quantity_assured}>
-      <div className={css.line_1}>Quality assured Production</div>
-      <div className={css.line_2}>
-        Add variety and margin by using our care-free international suppliers. No more Alibaba mystery shipments, we
-        believe in closed loop quality control and stringent factory vetting.
-      </div>
+      <p className={css.line_1}>Quality assured Production</p>
+      <p className={css.line_2}>
+        Add variety and margin by using our <span>care-free international suppliers</span>. No more Alibaba mystery
+        shipments, we believe in closed loop quality control and stringent factory vetting.
+      </p>
       <div className={css.line_3}>
         {part_quantity_assured.map(({ bg, title, desc }) => (
           <section key={title} className={css.section}>
@@ -40,8 +40,8 @@ const PartQuantityAssured = () => {
               <img src={bg} alt="" />
             </div>
             <div className={css.right}>
-              <div className={css.title}>{title}</div>
-              <div className={css.desc}>{desc}</div>
+              <p className={css.title}>{title}</p>
+              <p className={css.desc}>{desc}</p>
             </div>
           </section>
         ))}

@@ -65,8 +65,8 @@ const PartFeature = () => {
     <>
       {part_feature.map(({ title, desc }) => (
         <section className={css.section} key={title}>
-          <div className={css.title}>{title}</div>
-          <div className={css.desc}>{desc}</div>
+          <p className={css.title}>{title}</p>
+          <p className={css.desc}>{desc}</p>
         </section>
       ))}
     </>
@@ -74,10 +74,10 @@ const PartFeature = () => {
 
   return (
     <div className={css.part_feature}>
-      <div className={css.line_1}>Features</div>
-      <div className={css.line_2}>
+      <p className={css.line_1}>Features</p>
+      <p className={css.line_2}>
         Smart features that <span>de-stress</span> you.
-      </div>
+      </p>
       <div className={css.line_3}>
         {isDesktop ? (
           <div className={css.section_wrapper}>{sectionItems}</div>

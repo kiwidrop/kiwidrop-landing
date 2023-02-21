@@ -34,14 +34,14 @@ const part_scale_brand = [
 
 const PartScaleBrand = () => (
   <div className={css.part_scale_brand}>
-    <div className={css.line_1}>
+    <p className={css.line_1}>
       Scale your <span>brand</span>, not your overhead.
-    </div>
-    <div className={css.line_2}>
+    </p>
+    <p className={css.line_2}>
       On average retailers stock 2-4x their monthly revenue in product. Utilizing Kiwi’s cloud inventory retailers can
       finally stop turning their margin into long tail small qty, slow moving, off season dead inventory. Fix your cash
       flow problem and KEEP every dollar of profit you generate.
-    </div>
+    </p>
     <div className={css.line_3}>
       {part_scale_brand.map(({ icon, num, title, desc }, idx) => (
         <section className={css.section_item} key={title}>
@@ -50,8 +50,8 @@ const PartScaleBrand = () => (
             <span className={css.num}>{num}</span>
             {icon && idx === part_scale_brand.length - 1 && <span className={cn(css.icon, css.right)}>{icon}</span>}
           </div>
-          <div className={css.title}>{title}</div>
-          <div className={css.desc}>{desc}</div>
+          <p className={css.title}>{title}</p>
+          <p className={css.desc}>{desc}</p>
         </section>
       ))}
     </div>

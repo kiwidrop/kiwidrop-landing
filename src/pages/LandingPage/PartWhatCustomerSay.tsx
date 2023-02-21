@@ -38,16 +38,16 @@ const PartWhatCustomerSay = () => {
   return (
     <div>
       <div className={cn(css.part_what_customer_say, { [css.is_m]: !isDesktop })}>
-        <div className={css.line_1}>What our customers say</div>
+        <p className={css.line_1}>What our customers say</p>
         <div className={css.line_2}>
-          <div>We love you!</div>
-          <div>
+          <p>We love you!</p>
+          <p>
             But we really love that you... <span>love us!</span>
-          </div>
-          <div className={css.second_text}>
+          </p>
+          <p className={css.second_text}>
             The Kiwidrop family is growing! Join the movement of like-minded fashion retailers, influencers and live
             sellers.
-          </div>
+          </p>
         </div>
         <div className={css.line_3}>
           {isDesktop ? (
@@ -64,7 +64,7 @@ const PartWhatCustomerSay = () => {
                   <FaStar />
                   <FaStar />
                 </div>
-                <div className={css.desc}>{desc}</div>
+                <p className={css.desc}>{desc}</p>
               </section>
             ))
           ) : (
@@ -75,7 +75,7 @@ const PartWhatCustomerSay = () => {
                     <div className={css.logo}>
                       <img src={logo} alt="logo" />
                     </div>
-                    <div className={css.title}>{title}</div>
+                    <p className={css.title}>{title}</p>
                     <div className={css.star}>
                       <FaStar />
                       <FaStar />
@@ -83,7 +83,7 @@ const PartWhatCustomerSay = () => {
                       <FaStar />
                       <FaStar />
                     </div>
-                    <div className={css.desc}>{desc}</div>
+                    <p className={css.desc}>{desc}</p>
                   </section>
                 </SwiperSlide>
               ))}

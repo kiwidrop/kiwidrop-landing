@@ -31,10 +31,10 @@ const PartScaleYourLife = () => {
         </div>
         <div className={css.content}>
           <div className={css.left_content}>
-            <div className={css.line_1}>Scale Your Live Streaming Boutique</div>
-            <div className={css.line_2}>
+            <p className={css.line_1}>Scale Your Live Streaming Boutique</p>
+            <p className={css.line_2}>
               Stop gambling on inventory, focus on curating drops from our inventory catalog in the cloud
-            </div>
+            </p>
             <div className={cn(css.btns_wrapper, css.line_3)}>
               <Button shape="rounded" color="dark" className={css.btn1} type="link" href={DS2_URL}>
                 Start for free
@@ -43,10 +43,10 @@ const PartScaleYourLife = () => {
                 Install for Shopify
               </Button>
             </div>
-            <div className={css.line_4}>
+            <p className={css.line_4}>
               Join a community of thousands of live selling and traditional boutiques, immediately start selling
               high-margin products from the US and abroad.
-            </div>
+            </p>
           </div>
         </div>
         <div className={css.see_why_btn_wrapper}>
@@ -71,10 +71,10 @@ const PartScaleYourLife = () => {
       </div>
       <div className={css.content}>
         <div className={css.left_content}>
-          <div className={css.line_1}>Scale Your Live Streaming Boutique</div>
-          <div className={css.line_2}>
+          <p className={css.line_1}>Scale Your Live Streaming Boutique</p>
+          <p className={css.line_2}>
             Stop gambling on inventory, focus on curating drops from our inventory catalog in the cloud
-          </div>
+          </p>
           <div className={cn(css.btns_wrapper, css.line_3)}>
             <Button shape="rounded" color="dark" className={css.btn1} type="link" href={DS2_URL}>
               Start for free
@@ -83,10 +83,10 @@ const PartScaleYourLife = () => {
               Install for Shopify
             </Button>
           </div>
-          <div className={css.line_4}>
+          <p className={css.line_4}>
             Join a community of thousands of live selling and traditional boutiques, immediately start selling
             high-margin products from the US and abroad.
-          </div>
+          </p>
         </div>
         <div className={css.right_content} />
       </div>

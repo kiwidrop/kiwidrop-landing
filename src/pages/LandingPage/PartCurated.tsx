@@ -6,13 +6,13 @@ import css from './PartCurated.module.scss';
 const PartCurated = () => (
   <div className={css.part_curated}>
     <div className={css.left}>
-      <div className={css.line_1}>
+      <p className={css.line_1}>
         <span>Curate</span> and build your digital rack using Pinterest-style like boards!
-      </div>
-      <div className={css.line_2}>
+      </p>
+      <p className={css.line_2}>
         Add, remove and share items from our catalog to manage your curation and plan your releases. Build a collection
         easily by bulk importing!
-      </div>
+      </p>
       <div className={css.line_3}>
         <Button shape="rounded" color="dark" type="link" href={DS2_URL}>
           Get Started For Free
