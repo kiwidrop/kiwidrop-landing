@@ -23,6 +23,13 @@
     }
   }
   .line_3 {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 120%;
+    color: #6538e5;
+    text-align: center;
+  }
+  .line_4 {
     display: flex;
     flex-wrap: wrap;
     gap: 46px;
@@ -37,10 +44,11 @@
     .part_platforms {
       row-gap: 24px;
       padding: var(--padding-tb) var(--padding-lr);
-      .line_2 {
+      .line_2,
+      .line_3 {
         font-size: 32px;
       }
-      .line_3 {
+      .line_4 {
         gap: 24px;
         img {
           height: 40px;

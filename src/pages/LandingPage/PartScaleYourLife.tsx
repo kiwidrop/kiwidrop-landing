@@ -1,5 +1,5 @@
 import cn from 'classnames';
-import { FaAngleUp } from 'react-icons/fa';
+import { FaAngleDown } from 'react-icons/fa';
 
 import { Button } from '@/components/common';
 import { DS2_URL, installURL } from '@/cons/common';
@@ -52,7 +52,7 @@ const PartScaleYourLife = () => {
         <div className={css.see_why_btn_wrapper}>
           <Button className={css.see_why_btn} shape="rounded" onClick={handleSee}>
             See what happens
-            <FaAngleUp />
+            <FaAngleDown />
           </Button>
         </div>
       </div>

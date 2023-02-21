@@ -12,11 +12,9 @@ const part_platforms = [facebook, shopify, commentSold, tiktok, ins, poshmark];
 const PartPlatforms = () => (
   <div className={css.part_platforms}>
     <div className={css.line_1}>Platforms & Integrations</div>
-    <div className={css.line_2}>
-      <div>Unleash your ability to grow.</div>
-      <div className={css.second_text}>All you need is an iPhone, ring light and Kiwi.</div>
-    </div>
-    <div className={css.line_3}>
+    <p className={css.line_2}>Unleash your ability to grow.</p>
+    <p className={css.line_3}>All you need is an iPhone, ring light and Kiwi.</p>
+    <div className={css.line_4}>
       {part_platforms.map((src) => (
         <img className={css.img} src={src} alt={src} key={src} />
       ))}

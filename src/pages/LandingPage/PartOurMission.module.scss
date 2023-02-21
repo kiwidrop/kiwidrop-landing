@@ -51,25 +51,22 @@
 
 @at-root .is_desktop {
   .part_our_mission {
-    .video_wrapper {
-      width: 100%;
+    .block_wrapper_wrapper {
       position: absolute;
       top: 0;
       bottom: 0;
       left: 0;
       right: 0;
-      z-index: 0;
-    }
-    .block_wrapper_wrapper {
       max-width: 1320px;
-      margin: 0 auto;
       box-sizing: content-box;
+      display: flex;
+      align-items: center;
+      padding-left: var(--padding-lr);
+      padding-right: var(--padding-lr);
 
-      position: relative;
-      z-index: 1;
-      padding: 200px 70px;
       .block_wrapper {
-        padding: 36px;
+        position: relative;
+        z-index: 1;
         width: 55%;
         max-width: 800px;
         background: rgba(32, 34, 33, 0.9);
