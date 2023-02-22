@@ -7,6 +7,9 @@
       outline: none;
       display: block;
     }
+    video::-webkit-media-controls-enclosure {
+      display: none; //隐藏所有控件
+    }
   }
   .block_wrapper_wrapper {
     .block_wrapper {
