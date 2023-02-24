@@ -25,7 +25,7 @@ function Footer({ className, style }: Props): JSX.Element {
             <div className={css.section_title}>
               <img role="presentation" src={LOGO} alt="" className={css.logo} onClick={openDS2} />
             </div>
-            <div className={css.section_title}>Your Dropshipping Partner</div>
+            <div className={css.section_title}>Scale Your Live Selling Boutiques</div>
             <div className={css.section_body}>
               <div className={css.section_links}>
                 <a className={css.contact_us} href="mailto:support@kiwidrop.com">
