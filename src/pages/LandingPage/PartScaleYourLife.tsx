@@ -35,7 +35,7 @@ const PartScaleYourLife = () => {
           <div className={css.left_content}>
             <p className={css.line_1}>Scale Your Live Streaming Boutique</p>
             <p className={css.line_2}>
-              Stop gambling on inventory. Focus on curating drops, connecting with people, and delighting lives.
+              Stop gambling on inventory. Save time, curate drops, and delight lives.
             </p>
             <div className={cn(css.btns_wrapper, css.line_3)}>
               <Button shape="rounded" color="dark" className={css.btn1} type="link" href={DS2_URL}>

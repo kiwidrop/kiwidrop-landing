@@ -42,8 +42,8 @@ const PartOurMission = () => {
             {`Whether you're a mega boutique or a micro influencer, everyday individuals like you have the power to shape the way we connect, discover, and shop!`}
           </p>
           <p className={css.line_4}>
-            Our software, cloud inventory catalog and fulfillment services is the backbone that empowers you with
-            zero-overhead access to highly curated and on-demand fashion.
+            Our cloud inventory catalog in the cloud, software and services are the backbone that empowers you with
+            zero-overhead access to highly curated and on-demand products.
           </p>
           <div className={css.line_5}>
             <Button shape="rounded" color="light_dark" bordered type="link" href={DS2_URL}>
